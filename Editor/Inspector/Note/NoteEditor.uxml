@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/nadena.dev.modular-avatar/Editor/Inspector/Note/NoteStyles.uss?fileID=7433441132597879392&amp;guid=8cb782982d2d33a4499c6e3e0b4dc8cc&amp;type=3#NoteStyles" />
+    <ui:ScrollView horizontal-scroller-visibility="Hidden" style="max-height: 600px; padding-top: 10px;">
+        <ui:VisualElement name="displayContainer" class="container">
+            <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" binding-path="m_note" text="This note has text!" name="note" class="note-font" style="margin-top: 1px; margin-right: 3px; margin-bottom: 1px; margin-left: 3px;" />
+            <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" text="This note is empty." name="emptyNote" class="note-font" style="margin-top: 1px; margin-right: 3px; margin-bottom: 1px; margin-left: 3px; -unity-font-style: italic; color: rgba(210, 210, 210, 0.5);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="editContainer" class="container">
+            <ui:TextField picking-mode="Ignore" multiline="true" name="noteEditTextField" value="This text will be edited." max-length="8000" class="note-font" style="margin-right: 4px;" />
+        </ui:VisualElement>
+    </ui:ScrollView>
+    <ui:VisualElement name="displayContainerButtons">
+        <ui:Button text="Edit" parse-escape-sequences="true" display-tooltip-when-elided="true" name="editButton" />
+    </ui:VisualElement>
+    <ui:VisualElement name="editContainerButtons">
+        <ui:VisualElement style="flex-grow: 0; flex-direction: row;">
+            <ui:Button text="Cancel" parse-escape-sequences="true" display-tooltip-when-elided="true" name="cancelButton" class="medium-button" style="flex-grow: 1;" />
+            <ui:Button text="Save" parse-escape-sequences="true" display-tooltip-when-elided="true" name="saveButton" class="medium-button" style="flex-grow: 1;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
