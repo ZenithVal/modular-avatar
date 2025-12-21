@@ -9,7 +9,7 @@ namespace nadena.dev.modular_avatar.core
 	[HelpURL("https://modular-avatar.nadena.dev/docs/reference/note?lang=auto")]
 	public class ModularAvatarNote : AvatarTagComponent
 	{
-		[SerializeField] internal string m_note = "This is a note.";
+		[SerializeField] internal string m_note = string.Empty;
 		
 		[PublicAPI]
 		public string Note
