@@ -10,7 +10,6 @@ namespace nadena.dev.modular_avatar.core
 	public class ModularAvatarNote : AvatarTagComponent
 	{
 		[SerializeField] internal string m_note = "This is a note.";
-		[SerializeField] internal HelpBoxMessageType m_noteStyle = HelpBoxMessageType.None;
 		
 		[PublicAPI]
 		public string Note
