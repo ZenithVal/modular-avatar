@@ -18,11 +18,5 @@ namespace nadena.dev.modular_avatar.core
 			get => m_note;
 			set => m_note = value;
 		}
-
-		public HelpBoxMessageType NoteStyle
-		{
-			get => m_noteStyle;
-			set => m_noteStyle = value;
-		}
 	}
 }
